@@ -1,0 +1,1 @@
+alert ip any any -> any any ( msg:"TEST any IP traffic"; sid:1000002; rev:1;)
