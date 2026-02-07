@@ -3,7 +3,7 @@
 -- ============================================================================
 
 -- HOME_NET definition (any network for tutorial purposes)
-HOME_NET = 'any'
+HOME_NET = '192.168.10.0/24'
 EXTERNAL_NET = 'any'
 
 -- Include local rules
@@ -13,6 +13,12 @@ EXTERNAL_NET = 'any'
 -- Enable rule-based detection
 ips =
 {
+ -- variables = {
+  --  net = {
+    --HOME_NET = HOME_NET,
+   -- EXTERNAL_NET = EXTERNAL_NET
+--    }
+--  },
   include  = '/media/sf__ISNCODES/snort-nids-tutorial/snort/rules/local.rules'
 }
 

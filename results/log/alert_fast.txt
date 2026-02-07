@@ -1,0 +1,9 @@
+02/06-22:23:11.946922 [**] [1:1000005:1] "ICMP Suspicious Payload (DEADBEEF) Detected" [**] [Priority: 0] {ICMP} 192.168.10.20 -> 192.168.10.1
+02/06-22:23:11.947094 [**] [1:1000005:1] "ICMP Suspicious Payload (DEADBEEF) Detected" [**] [Priority: 0] {ICMP} 192.168.10.1 -> 192.168.10.20
+02/06-22:23:12.948624 [**] [1:1000005:1] "ICMP Suspicious Payload (DEADBEEF) Detected" [**] [Priority: 0] {ICMP} 192.168.10.20 -> 192.168.10.1
+02/06-22:23:12.948756 [**] [1:1000005:1] "ICMP Suspicious Payload (DEADBEEF) Detected" [**] [Priority: 0] {ICMP} 192.168.10.1 -> 192.168.10.20
+02/06-22:23:14.001841 [**] [1:1000005:1] "ICMP Suspicious Payload (DEADBEEF) Detected" [**] [Priority: 0] {ICMP} 192.168.10.20 -> 192.168.10.1
+02/06-22:23:14.001967 [**] [1:1000005:1] "ICMP Suspicious Payload (DEADBEEF) Detected" [**] [Priority: 0] {ICMP} 192.168.10.1 -> 192.168.10.20
+02/06-22:23:19.052684 [**] [1:1000006:1] "NMAP TCP Null Scan Detected" [**] [Priority: 0] {TCP} 192.168.10.20:39909 -> 192.168.10.1:22
+02/06-22:23:19.052684 [**] [1:1000006:1] "NMAP TCP Null Scan Detected" [**] [Priority: 0] {TCP} 192.168.10.20:39909 -> 192.168.10.1:80
+02/06-22:23:20.178247 [**] [1:1000006:1] "NMAP TCP Null Scan Detected" [**] [Priority: 0] {TCP} 192.168.10.20:39911 -> 192.168.10.1:22
