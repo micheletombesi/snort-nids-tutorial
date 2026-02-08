@@ -1,1 +1,0 @@
-The base environment has been configured inside the Ubuntu 24.04 virtual machine provided for the course. Required build tools (gcc, make, cmake), Python, and network analysis tools (tcpdump, Wireshark) have been installed and verified 

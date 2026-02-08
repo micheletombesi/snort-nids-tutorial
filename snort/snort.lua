@@ -5,6 +5,22 @@
 -- HOME_NET definition (any network for tutorial purposes)
 HOME_NET = '192.168.10.0/24'
 EXTERNAL_NET = 'any'
+stream = { }
+stream_tcp = {
+   policy = 'first',
+   session_timeout = 180
+}
+stream_udp = { }
+
+http_inspect = { }
+http_server = { }
+http_client = { }
+
+
+binder = {
+   { when = { proto = 'tcp', ports = '80' }, use = { type = 'http_inspect'}},
+   { use = { type = 'stream_tcp' }}
+}
 
 -- Include local rules
 -- RULE_PATH = './snort/rules'
@@ -27,3 +43,4 @@ alert_fast =
 {
   file = true
 }
+

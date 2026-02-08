@@ -1,5 +1,5 @@
-# 1) Test ping
-alert tcp any any -> any any (msg:"Ping rilevato!"; sid:1000001; rev:1;)
+# 1) Test ril. traf. IP
+#alert ip any any -> any any (msg:"Test Rilevamento Traffico IP "; sid:1000001; rev:1;)
 
 # 2) ICMP ping verso Snort
 #alert icmp any any -> 192.168.10.1/24 any (msg:"[LAB] ICMP ping verso $HOME_NET"; itype:8; sid:1000002; rev:1;)
@@ -13,10 +13,10 @@ alert tcp any any -> any any (msg:"Ping rilevato!"; sid:1000001; rev:1;)
 ##################### FOR ANOMALIES ###########################
 
 # 5) Rilevamento payload ICMP Sospetto
-#alert icmp any any -> any any (msg:"ICMP Suspicious Payload (DEADBEEF) Detected"; content:"|DE AD BE EF|"; sid:1000005; rev:1; classtype: misc-activity;)
+alert icmp any any -> any any (msg:"ICMP Suspicious Payload (DEADBEEF) Detected"; content:"|DE AD BE EF|"; sid:1000005; rev:1; classtype: misc-activity;)
 
 # 6) Rilevamento scansione TCP NULL
-#alert tcp any any -> any any (msg:"NMAP TCP Null Scan Detected"; flags:0; sid:1000006; rev:1; classtype:attempted-recon;)
+alert tcp any any -> any any (msg:"NMAP TCP Null Scan Detected"; flags:0; sid:1000006; rev:1; classtype:attempted-recon;)
 
 # 7) Tentativo di Path Traversal (Attacco Web)
-#alert tcp any any -> any 80 (msg:"WEB-ATTACK /etc/passwd access attempt"; content:"/etc/passwd";  http_uri; sid:1000007; rev:1;)
+alert tcp any any -> any 80 (msg:"WEB-ATTACK /etc/passwd access attempt"; content:"/etc/passwd";  http_uri; sid:1000007; rev:1;)
